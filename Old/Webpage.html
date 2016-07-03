@@ -1,0 +1,96 @@
+<html lang="en">
+	<head>
+		<script src="sourLeechScript.js" type="text/javascript"></script>
+		<!--<script src="jquery-1.12.0.min.js" type="text/javascript"></script>-->
+		<link rel="stylesheet" type="text/css" href="styleSheet.html"/>
+		<style>
+<!--ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}-->		
+		</style>
+	</head>
+	<body>
+		
+		<div id="header">Sour Leech
+			
+		</div><button onClick="goToMain('mainScreen')">main</button><button onClick="goToShop('shopScreen')">shop</button>
+		<!--<div id="navMenu">
+			<ul>
+				<li><a>Main</a></li>	
+				<li><a>Shop</a></li>
+				<li><a>Upgrades</a></li>
+				<li><a>Settings</a></li>
+			</ul>
+		<!--</div>-->
+			<!--<div id="mainscreen">-->
+			<!--Left Column-->
+			<div id="mainLeft">
+				Staples: <button id="getStaples" onClick="stapleCounter()">
+					<span id="stealStaples">Not Stealing</span>
+				</button>
+				<span id="displayStaples">0</span>
+				
+				<p></p>
+			
+				<div> <!--id="paperClipBlock"-->PaperClips: <button id="getPaperClips" onClick="paperClipCounter()">
+					<span id="stealPaperClips">Not Stealing</span>
+				</button>
+				<span id="displayPaperClips">0</span></div>
+				<p></p>
+				
+			</div>
+			
+			<!--Right Column-->
+			<div id="mainright" >
+				<p></p>
+				<div id="money">$0</div>
+				<p></p>
+				<button id="sellButton" onClick="sellAll()">$Sell All$</button>
+				<p></p>
+				<div id="displayTrust">0</div><span id="rightText">Trust: </span><br>
+				<p></p>
+				<div id="displayReputation">0</div><span id="rightText">Reputation: </span><br>
+				<p></p>
+				<button id="unlockPaperClips" onClick="unlockPaperClips()">Bribe Gary</button>
+			</div>
+			
+			
+			
+			<!--Shop-->
+			<div id="shopScreen">
+			<p style="align:center;">Here you can spend you Money or Reputation to unlock new things and progress farther</p>
+			<!--<button id="unlockPaperClips" onClick="unlockPaperClips()">Bribe Gary</button>-->
+			</div>
+			
+			
+			<!--Black Market-->
+			
+			
+			<!--Options-->
+			
+			
+			<!--Education (tech tree)-->
+	</body>
+	
+
+</html>
