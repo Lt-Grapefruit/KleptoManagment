@@ -11,14 +11,21 @@
     <sprite>sprites\spr_coll_three</sprite>
     <sprite>sprites\spr_coll_two</sprite>
     <sprite>sprites\windows_1</sprite>
-    <sprite>sprites\wndows_2</sprite>
-    <sprite>sprites\windows_3</sprite>
-    <sprite>sprites\windows_4</sprite>
     <sprite>sprites\buy_me</sprite>
+    <sprite>sprites\spr_button</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <objects name="objects"/>
+  <objects name="objects">
+    <object>objects\obj_nav_bar</object>
+    <object>objects\coll_main</object>
+    <object>objects\coll_shop</object>
+    <object>objects\coll_upgrades</object>
+    <object>objects\coll_settings</object>
+    <object>objects\obj_container</object>
+    <object>objects\obj_button_staples</object>
+    <object>objects\Variables</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
