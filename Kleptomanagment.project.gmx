@@ -24,7 +24,9 @@
     <object>objects\coll_settings</object>
     <object>objects\obj_container</object>
     <object>objects\obj_button_staples</object>
+    <object>objects\obj_button_paperclips</object>
     <object>objects\Variables</object>
+    <object>objects\object11</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
