@@ -30,7 +30,7 @@ global.basic_materials[0,0] = 0;        //amount
 global.basic_materials[0,1] = 1;        //increment
 global.basic_materials[0,2] = 1;        //trust
 global.basic_materials[0,3] = false;    //on?
-global.basic_materials[0,4] = 0;     //timer 1000
+global.basic_materials[0,4] = 0;        //timer 1000
 global.basic_materials[0,5] = 1;        //value
 global.basic_materials[0,6] = true;     //unlock
 //paperclips
