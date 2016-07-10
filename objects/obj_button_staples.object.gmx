@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>depth = 0;
-
 </string>
           </argument>
         </arguments>
@@ -52,10 +51,9 @@
             <string>//var mouse_status = 0;
 image_index = global.mouse_status;
 global.basic_materials[0,4] ++
-while (global.basic_materials[0,4] == 60){
-    global.basic_materials[0,0] += (global.basic_materials[0,1] * global.basic_materials[0,5]);
-    global.basic_materials[0,4] = 0;
-}
+
+get("good");
+
 if (global.current_nav != 0){
     instance_destroy();
 }
@@ -170,7 +168,7 @@ if (global.basic_materials[0,3] == false) {
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-draw_text (8, 6, "staples");
+draw_text (x+8, y+6, "staples " + string(global.basic_materials[0,0]));
 </string>
           </argument>
         </arguments>

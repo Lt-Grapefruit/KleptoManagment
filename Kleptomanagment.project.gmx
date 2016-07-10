@@ -16,6 +16,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\get.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_nav_bar</object>
     <object>objects\coll_main</object>
@@ -27,6 +30,7 @@
     <object>objects\obj_button_paperclips</object>
     <object>objects\Variables</object>
     <object>objects\obj_buy_me</object>
+    <object>objects\obj_debug</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
