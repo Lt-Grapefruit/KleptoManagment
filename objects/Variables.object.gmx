@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = 1000;
+            <string>///declare basic materials
+depth = 1000;
 //staples
 global.basic_materials[0,0] = 0;        //amount
 global.basic_materials[0,1] = 1;        //increment

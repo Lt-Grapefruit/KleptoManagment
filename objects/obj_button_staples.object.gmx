@@ -50,12 +50,15 @@
             <kind>1</kind>
             <string>//var mouse_status = 0;
 image_index = global.mouse_status;
-global.basic_materials[0,4] ++
+global.basic_materials[0,4] += 1;
 
 get("good");
 
 if (global.current_nav != 0){
     instance_destroy();
+}
+if (global.basic_materials[0,3] == true) {
+    global.mouse_status = 3;
 }
 </string>
           </argument>
@@ -125,7 +128,7 @@ if (global.current_nav != 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.mouse_status = 2;
+            <string>    global.mouse_status = 2;
 if (global.basic_materials[0,3] == false) {
     global.basic_materials[0,3] = true;
 }else {
@@ -168,8 +171,36 @@ if (global.basic_materials[0,3] == false) {
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-draw_text (x+8, y+6, "staples " + string(global.basic_materials[0,0]));
+//draw_text (x+8, y+6, "staples " /*+ string(global.basic_materials[0,0])*/);
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>taples</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>8</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>6</string>
           </argument>
         </arguments>
       </action>
