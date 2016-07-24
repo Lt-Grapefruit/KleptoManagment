@@ -15,6 +15,11 @@
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_load_dark</sprite>
     <sprite>sprites\spr_load_light</sprite>
+    <sprites name="Car Sprites">
+      <sprite>sprites\spr_car_menu</sprite>
+      <sprite>sprites\spr_car_plus</sprite>
+      <sprite>sprites\spr_car_minus</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -34,6 +39,12 @@
     <object>objects\obj_buy_me</object>
     <object>objects\obj_debug</object>
     <object>objects\obj_loader_staples</object>
+    <objects name="Car Objects">
+      <object>objects\obj_car_menu</object>
+      <object>objects\obj_car_item</object>
+      <object>objects\obj_car_plus</object>
+      <object>objects\obj_car_minus</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

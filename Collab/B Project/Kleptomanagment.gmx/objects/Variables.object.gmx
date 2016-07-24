@@ -75,6 +75,10 @@ global.basic_materials[5,3] = false;
 global.basic_materials[5,4] = 0;        //32000
 global.basic_materials[5,5] = 150;
 global.basic_materials[5,6] = false;
+
+//Car Variables
+global.car_info[] = 0;
+global.car_load[] = 0;
 </string>
           </argument>
         </arguments>
