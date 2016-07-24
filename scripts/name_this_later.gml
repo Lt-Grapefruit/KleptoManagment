@@ -16,4 +16,4 @@ if ((global.basic_materials[0,0] >= 1000000000000) && (global.basic_materials[0,
 if ((global.basic_materials[0,0] >= 1000000000000000) && (global.basic_materials[0,0] <= 1000000000000000000)) { 
     staples_display = string_copy(string(global.basic_materials[0,0] / 1000), 0, 4) + "Qa";
 };
-
+return b;

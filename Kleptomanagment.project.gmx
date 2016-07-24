@@ -22,6 +22,8 @@
   <scripts name="scripts">
     <script>scripts\get.gml</script>
     <script>scripts\name_this_later.gml</script>
+    <script>scripts\name_this_later_new.gml</script>
+    <script>scripts\suffix1.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_nav_bar</object>

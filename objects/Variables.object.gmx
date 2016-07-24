@@ -28,7 +28,7 @@
             <string>///Declare basic materials
 depth = 1000;
 //staples
-global.basic_materials[0,0] = 0;        //amount
+global.basic_materials[0,0] = 1900;        //amount
 global.basic_materials[0,1] = 1;        //increment
 global.basic_materials[0,2] = 1;        //trust
 global.basic_materials[0,3] = false;    //on?
@@ -36,7 +36,7 @@ global.basic_materials[0,4] = 0;        //timer
 global.basic_materials[0,5] = 1;        //value
 global.basic_materials[0,6] = true;     //unlock
 global.basic_materials[0,7] = 1;      //time cap
-global.basic_materials[0,8] = 150;        //load
+global.basic_materials[0,8] = 15;        //load
 //paperclips
 global.basic_materials[1,0] = 0;
 global.basic_materials[1,1] = 1

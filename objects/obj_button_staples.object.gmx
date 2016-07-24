@@ -64,9 +64,6 @@ if (global.basic_materials[0,4] &gt;= global.basic_materials[0,7]){
     global.basic_materials[0,4] = 0;
 } 
 
-
-
-
 if (global.current_nav != 0){
     x = -100;
     y = -100;
@@ -151,7 +148,6 @@ if (global.basic_materials[0,3] == false) {
     global.basic_materials[0,2] = .85;
 }else {
     global.basic_materials[0,3] = false;
-    global.basic_materials[0,2] = 1;
 }
 </string>
           </argument>
@@ -190,9 +186,6 @@ if (global.basic_materials[0,3] == false) {
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-
-staples_string = string(global.basic_materials[0,0]);
-
 /*if((string_length(staples_string)) &gt;= 4 ) {
     switch (global.basic_materials[0,0]) {
         case (global.basic_materials[0,0] = 1000): 
@@ -203,10 +196,15 @@ staples_string = string(global.basic_materials[0,0]);
             break;
     }
 }*/
+//name_this_later();
 
-name_this_later();
-
-draw_text (x+8, y+6, "staples " + string(staples_display));
+staples_display = name_this_later_new(global.basic_materials[0,0]);
+//staples_suffix = suffix(global.basic_materials[0,0]);
+draw_set_halign(fa_left);
+draw_text (x+8, y+6, "staples ");
+draw_set_halign(fa_right);
+draw_text (x+150, y+6, string(staples_display  ));
+draw_set_halign(fa_left);
 </string>
           </argument>
         </arguments>
