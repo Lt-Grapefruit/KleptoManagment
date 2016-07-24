@@ -15,6 +15,7 @@
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_load_dark</sprite>
     <sprite>sprites\spr_load_light</sprite>
+    <sprite>sprites\spr_reputation</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,6 +36,7 @@
     <object>objects\obj_buy_me</object>
     <object>objects\obj_debug</object>
     <object>objects\obj_loader_staples</object>
+    <object>objects\obj_reputation</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

@@ -148,8 +148,10 @@ if (global.basic_materials[0,3] == true) {
             <string>    global.mouse_status = 2;
 if (global.basic_materials[0,3] == false) {
     global.basic_materials[0,3] = true;
+    global.basic_materials[0,2] = .85;
 }else {
     global.basic_materials[0,3] = false;
+    global.basic_materials[0,2] = 1;
 }
 </string>
           </argument>

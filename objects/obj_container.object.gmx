@@ -51,18 +51,10 @@ delay = 0;
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = global.current_nav;
-delay++;
-//set buttons
-if(global.current_nav == 0 &amp;&amp; delay = 5) {
-    instance_create (x+25,y+25, obj_button_staples);
-    //instance_create (25,25, obj_button_staples);
-    //instance_create (25,25, obj_button_staples);
-    //instance_create (25,25, obj_button_staples);
-    //instance_create (25,25, obj_button_staples);
-    //instance_create (25,25, obj_button_staples);
-}   
-if(global.current_nav == 1) {
-    instance_create (25,150, obj_buy_me);
+//set buttons 
+if(global.current_nav == 1 ) {
+    obj_buy_me.x = 25;
+    obj_buy_me.y = 150;
 }
 
 </string>
@@ -88,6 +80,9 @@ if(global.current_nav == 1) {
           <argument>
             <kind>1</kind>
             <string>var global.mouse_status = 0;
+instance_create(-100,-100,obj_button_staples)
+instance_create(-100,-100,obj_buy_me)
+instance_create(-100,-100,obj_reputation)
 </string>
           </argument>
         </arguments>

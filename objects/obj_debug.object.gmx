@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x,y,string(global.basic_materials[0,0]));
-draw_text(x,y+10,string(global.basic_materials[0,3]));
-draw_text(x, y+20,string(global.basic_materials[0,4]));
+            <string>draw_text(x, y+10, "stealing" + string(global.basic_materials[0,3]));
+draw_text(x, y+20, "timer" + string(global.basic_materials[0,4]));
+draw_text(x, y+30, "money" + string(global.money));
+draw_text(x, y+50, "reputation" + string(global.reputation[0]));
+draw_text(x, y+60, "reputation timer" + string(global.reputation[3]));
+draw_text(x, y+70, "calculator" + string(global.reputation[1]));
 </string>
           </argument>
         </arguments>

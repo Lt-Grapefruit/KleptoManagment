@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///declare basic materials
+            <string>///Declare basic materials
 depth = 1000;
 //staples
 global.basic_materials[0,0] = 0;        //amount
@@ -36,7 +36,7 @@ global.basic_materials[0,4] = 0;        //timer
 global.basic_materials[0,5] = 1;        //value
 global.basic_materials[0,6] = true;     //unlock
 global.basic_materials[0,7] = 1;      //time cap
-global.basic_materials[0,8] = 1;        //load
+global.basic_materials[0,8] = 150;        //load
 //paperclips
 global.basic_materials[1,0] = 0;
 global.basic_materials[1,1] = 1
@@ -90,6 +90,16 @@ global.basic_materials[5,8] = 32;
 //car
 global.car_info[] = 0;
 global.car_load[] = 0;
+//money
+global.money = 1000;
+//reputation
+global.reputation[0] = 0;       //ammount
+    //calculator
+global.reputation[1] = 0;
+global.reputation[2] = 1;       //bonus
+global.reputation[3] = 0;       //timer
+global.reputation[4] = 300;     //time cap
+
 </string>
           </argument>
         </arguments>
