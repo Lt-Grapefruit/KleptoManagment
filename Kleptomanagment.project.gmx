@@ -13,11 +13,14 @@
     <sprite>sprites\windows_1</sprite>
     <sprite>sprites\buy_me</sprite>
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_load_dark</sprite>
+    <sprite>sprites\spr_load_light</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\get.gml</script>
+    <script>scripts\name_this_later.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_nav_bar</object>
@@ -31,7 +34,12 @@
     <object>objects\Variables</object>
     <object>objects\obj_buy_me</object>
     <object>objects\obj_debug</object>
+    <object>objects\obj_loader_staples</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+    <timeline>timelines\timeline1</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>

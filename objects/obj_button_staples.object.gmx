@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>depth = 0;
+instance_create (x+105,y, obj_loader_staples);
 </string>
           </argument>
         </arguments>
@@ -50,12 +51,16 @@
             <kind>1</kind>
             <string>//var mouse_status = 0;
 image_index = global.mouse_status;
-global.basic_materials[0,4]++;
 
-if (global.basic_materials[0,4] &gt;= 2000) {
+
+if (global.basic_materials[0,3] == true) {global.basic_materials[0,4]++;}
+
+if (global.basic_materials[0,4] &gt;= global.basic_materials[0,7]){
+
     if (global.basic_materials[0,3] == true) {
     global.basic_materials[0,0] += global.basic_materials[0,1];
     }
+    
     global.basic_materials[0,4] = 0;
 } 
 
@@ -63,7 +68,11 @@ if (global.basic_materials[0,4] &gt;= 2000) {
 
 
 if (global.current_nav != 0){
-    instance_destroy();
+    x = -100;
+    y = -100;
+}else {
+    x = 25;
+    y = 150;
 }
 if (global.basic_materials[0,3] == true) {
     global.mouse_status = 3;
@@ -179,7 +188,23 @@ if (global.basic_materials[0,3] == false) {
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-draw_text (x+8, y+6, string("staples " + string(global.basic_materials[0,0])));
+
+staples_string = string(global.basic_materials[0,0]);
+
+/*if((string_length(staples_string)) &gt;= 4 ) {
+    switch (global.basic_materials[0,0]) {
+        case (global.basic_materials[0,0] = 1000): 
+            staples_display = string_copy(string(global.basic_materials[0,0] / 1000), 0, 4) + "K";
+            break;
+        default:
+            staples_display = staples_string;
+            break;
+    }
+}*/
+
+name_this_later();
+
+draw_text (x+8, y+6, "staples " + string(staples_display));
 </string>
           </argument>
         </arguments>
