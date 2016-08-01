@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = 0;
-test_upgrade = 0;
+var global.staple_speed_upgrade = 0;
+var global.buy_delay = 0;
 </string>
           </argument>
         </arguments>
@@ -57,6 +58,7 @@ test_upgrade = 0;
     x = 25;
     y = 150;
 }
+global.buy_delay++;
 </string>
           </argument>
         </arguments>
@@ -79,12 +81,65 @@ test_upgrade = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if((test_upgrade == 0) &amp;&amp; (global.money &gt;= 10)) {
+            <string>/*if((staples_speed_upgrade == 0) &amp;&amp; (global.money &gt;= 10)) {
     image_index = 1;
     global.basic_materials[0,7] = 50;
-    test_upgrade = 1;
+    staple_speed_upgrade = 1;
     global.money -= 10;
+}*/
+switch(global.staple_speed_upgrade) {
+    case 1:
+        if((global.money &gt;= 100) &amp;&amp; (global.buy_delay &gt;=5) &amp;&amp; (global.staple_speed_upgrade = 1)) {
+            global.basic_materials[0,7] = 10;
+            global.staple_speed_upgrade = 2;
+            global.money -= 100;
+            global.buy_delay = 0;
+        }
+    case 0:
+        if((global.money &gt;= 10) &amp;&amp; (global.buy_delay &gt;=5) &amp;&amp; (global.staple_speed_upgrade = 0)) {
+            global.basic_materials[0,7] = 50;
+            global.staple_speed_upgrade = 1;
+            global.money -= 10;
+            global.buy_delay = 0;
+        }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>500</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring>draw_self();</codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(x+4, y+4, ("Staple Steal Speed ") + (string(global.staple_speed_upgrade + 1)));
 </string>
           </argument>
         </arguments>

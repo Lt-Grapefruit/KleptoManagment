@@ -4,14 +4,10 @@ b = "";
 c = argument0;
 
 if(a < 1000) {
-    b = string_copy(string(a/1), 0, 4);
+    b = string_copy(string(a), 0, 4);
 }
 if ((a >= 1000) && (a < 1000000)) { 
-    if(string_copy(string(a), 1, 3) = "000") {
-        global.basic_materials[0,0] += 1
-    }else {
         b = string_copy(string(c / 1000), 0, 4) + " K";
-    }
 }
 if ((a >= 1000000) && (a < 1000000000)) { 
     b = string_copy(string(c / 1000000), 0, 4) + " M";
