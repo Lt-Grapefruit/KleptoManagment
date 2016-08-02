@@ -93,7 +93,7 @@ global.car_load[] = 0;
 //money
 global.money = 1000;
 //reputation
-global.reputation[0] = 0;       //ammount
+global.reputation[0] = 0;       //amount
     //calculator
 global.reputation[1] = 0;
 global.reputation[2] = 1;       //bonus
