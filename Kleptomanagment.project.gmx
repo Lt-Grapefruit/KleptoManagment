@@ -6,41 +6,65 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\Nav_Bar</sprite>
-    <sprite>sprites\spr_coll_one</sprite>
-    <sprite>sprites\spr_coll_three</sprite>
-    <sprite>sprites\spr_coll_two</sprite>
-    <sprite>sprites\windows_1</sprite>
-    <sprite>sprites\buy_me</sprite>
-    <sprite>sprites\spr_button</sprite>
-    <sprite>sprites\spr_load_dark</sprite>
-    <sprite>sprites\spr_load_light</sprite>
-    <sprite>sprites\spr_reputation</sprite>
+    <sprites name="Global">
+      <sprite>sprites\Nav_Bar</sprite>
+      <sprite>sprites\spr_coll_one</sprite>
+      <sprite>sprites\spr_coll_two</sprite>
+      <sprite>sprites\spr_coll_three</sprite>
+      <sprite>sprites\windows_1</sprite>
+      <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_load_dark</sprite>
+      <sprite>sprites\spr_load_light</sprite>
+    </sprites>
+    <sprites name="Main">
+      <sprite>sprites\spr_reputation</sprite>
+    </sprites>
+    <sprites name="Shop">
+      <sprite>sprites\buy_me</sprite>
+    </sprites>
+    <sprites name="Car">
+      <sprite>sprites\spr_car_minus</sprite>
+      <sprite>sprites\spr_car_plus</sprite>
+      <sprite>sprites\spr_car_menu</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\get.gml</script>
-    <script>scripts\name_this_later.gml</script>
-    <script>scripts\name_this_later_new.gml</script>
-    <script>scripts\suffix1.gml</script>
-    <script>scripts\save.gml</script>
-    <script>scripts\load.gml</script>
+    <scripts name="Global">
+      <script>scripts\name_this_later_new.gml</script>
+      <script>scripts\suffix1.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_nav_bar</object>
-    <object>objects\coll_main</object>
-    <object>objects\coll_shop</object>
-    <object>objects\coll_upgrades</object>
-    <object>objects\coll_settings</object>
-    <object>objects\obj_container</object>
-    <object>objects\obj_button_staples</object>
-    <object>objects\obj_button_paperclips</object>
-    <object>objects\Variables</object>
-    <object>objects\obj_buy_me</object>
-    <object>objects\obj_debug</object>
-    <object>objects\obj_loader_staples</object>
-    <object>objects\obj_reputation</object>
+    <objects name="Global">
+      <object>objects\obj_nav_bar</object>
+      <object>objects\obj_container</object>
+      <object>objects\Variables</object>
+      <object>objects\obj_debug</object>
+      <object>objects\obj_save</object>
+      <objects name="Coll">
+        <object>objects\coll_main</object>
+        <object>objects\coll_shop</object>
+        <object>objects\coll_upgrades</object>
+        <object>objects\coll_settings</object>
+      </objects>
+    </objects>
+    <objects name="Car">
+      <object>objects\obj_car_minus</object>
+      <object>objects\obj_car_plus</object>
+      <object>objects\obj_car_menu</object>
+      <object>objects\obj_car_item</object>
+    </objects>
+    <objects name="Main">
+      <object>objects\obj_reputation</object>
+      <object>objects\obj_loader_staples</object>
+      <object>objects\obj_button_staples</object>
+      <object>objects\obj_button_paperclips</object>
+    </objects>
+    <objects name="Shop">
+      <object>objects\obj_buy_me</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
