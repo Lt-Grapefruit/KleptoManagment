@@ -27,6 +27,12 @@
       <sprite>sprites\spr_car_plus</sprite>
       <sprite>sprites\spr_car_menu</sprite>
     </sprites>
+    <sprites name="Upgrades">
+      <sprite>sprites\placeholder</sprite>
+    </sprites>
+    <sprites name="Settings">
+      <sprite>sprites\placeholder0</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -34,6 +40,23 @@
     <scripts name="Global">
       <script>scripts\name_this_later_new.gml</script>
       <script>scripts\suffix1.gml</script>
+      <script>scripts\funk_save_time.gml</script>
+      <script>scripts\funk_idle_time.gml</script>
+    </scripts>
+    <scripts name="Main">
+      <script>scripts\funk_increment.gml</script>
+    </scripts>
+    <scripts name="Shop">
+      <script>scripts\funk_ph0.gml</script>
+    </scripts>
+    <scripts name="Car">
+      <script>scripts\funk_ph1.gml</script>
+    </scripts>
+    <scripts name="Upgrades">
+      <script>scripts\funk_ph2.gml</script>
+    </scripts>
+    <scripts name="Settings">
+      <script>scripts\funk_ph3.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -61,9 +84,16 @@
       <object>objects\obj_loader_staples</object>
       <object>objects\obj_button_staples</object>
       <object>objects\obj_button_paperclips</object>
+      <object>objects\obj_son</object>
     </objects>
     <objects name="Shop">
       <object>objects\obj_buy_me</object>
+    </objects>
+    <objects name="Upgrades">
+      <object>objects\obj_ph0</object>
+    </objects>
+    <objects name="Settings">
+      <object>objects\obj_ph1</object>
     </objects>
   </objects>
   <timelines name="timelines">

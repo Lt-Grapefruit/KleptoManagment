@@ -141,6 +141,33 @@ if (savetime == 9000) {
 }else {
     game_save("save.dat");
 }
+funk_save_time();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (file_exists(save.dat)) {
+    game_load(save.dat)
+}
+funk_idle_time();
 </string>
           </argument>
         </arguments>
