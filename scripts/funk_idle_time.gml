@@ -8,9 +8,9 @@ var elapsed_second
 var elapsed_year
 var global.elapsed_total = 0;
 
-if (file_exists(time.ini)) {
+if (file_exists('time.ini')) {
     
-    ini_open(time.ini);
+    ini_open('time.ini');
     stored_second = ini_read_real('time','second',0);
     stored_year = ini_read_real('time','year',0);
     
@@ -39,3 +39,6 @@ if (file_exists(time.ini)) {
 
 global.elapsed_total *= 30;
 
+if (obj_button_staples.unlock == true){
+    
+}

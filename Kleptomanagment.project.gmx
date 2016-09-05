@@ -82,9 +82,11 @@
     <objects name="Main">
       <object>objects\obj_reputation</object>
       <object>objects\obj_loader_staples</object>
-      <object>objects\obj_button_staples</object>
-      <object>objects\obj_button_paperclips</object>
+      <object>objects\obj_button_staples_old</object>
+      <object>objects\obj_button_paperclips_old</object>
       <object>objects\obj_son</object>
+      <object>objects\obj_button_Dad</object>
+      <object>objects\obj_button_staples</object>
     </objects>
     <objects name="Shop">
       <object>objects\obj_buy_me</object>
